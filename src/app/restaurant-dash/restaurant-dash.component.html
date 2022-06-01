@@ -1,0 +1,167 @@
+<nav class="nav.navbar.navbar-light bg-primary">
+  <div class="container-fluid">
+    <div class="d-flex">
+      <h2>
+        Reco Res
+      </h2>
+    </div>
+
+    <div class="d-flex">
+      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+        Add
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!--Adding Jumbotron for better UI-->
+<div class="p-5 mb-4 bg-light">
+  <div class="container-fluid py-5">
+    <h1 class="display-5 fw-bold">
+      We help manage your favorite restaurants with ease.
+    </h1>
+    <p class="col-md-8 fs-4">
+      Connect with us
+    </p>
+
+    <div class="wrapper">
+
+      <a class="icon githubbtn-primary btn-lg" rel="noopener" target="_blank" type="button" href="https://github.com/rajuroy1234">
+        <div class="tooltip">Github</div>
+        <span><i class="fab fa-github"></i></span>
+      </a>&nbsp;
+      <a class="icon instagram btn-primary btn-lg" rel="noopener" target="_blank" type="button" href="https://www.instagram.com/r_roy780/?hl=en">
+        <div class="tooltip">Instagram</div>
+        <span><i class="fab fa-instagram"></i></span>
+      </a>&nbsp;
+      <a class="icon facebook btn-primary btn-lg" rel="noopener" target="_blank" type="button" href="https://www.facebook.com/raju.roy258500/">
+        <div class="tooltip">Facebook</div>
+        <span><i class="fab fa-facebook-f"></i></span>
+
+      </a>&nbsp;
+    </div>
+
+  </div>
+</div>
+
+<!-- Table is displayed-->
+<table class="table mt-4">
+  <thead>
+    <tr>
+      <th scope="col">
+        Restaurant ID
+      </th>
+
+      <th scope="col">
+        Name
+      </th>
+
+      <th scope="col">
+        Email
+      </th>
+
+      <th scope="col">
+        Mobile
+      </th>
+
+      <th scope="col">
+        Address
+      </th>
+
+      <th scope="col">
+        Services
+      </th>
+
+      <th scope="col">
+        Action
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>
+        1
+      </td>
+
+      <td>
+        KFC
+      </td>
+
+      <td>
+        kfcind@gmail.com
+      </td>
+
+      <td>
+        8953049288
+      </td>
+
+      <td>
+        City Centre, Siliguri
+      </td>
+
+      <td>
+        Food and Beverages
+      </td>
+
+      <td>
+        <button class="btn btn-info">Edit</button>&nbsp;
+        <button class="btn btn-danger">Delete</button>
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="formValue">
+          <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" formControlName="name" class="form-control" id="exampleInputName1" aria-describedby="emailHelp"
+              placeholder="Enter your name">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" formControlName="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email id">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Mobile</label>
+            <input type="text" formControlName="mobile" class="form-control" id="exampleInputMobile1" aria-describedby="emailHelp"
+              placeholder="Enter your Mobile No.">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Address</label>
+            <input type="text" formControlName="address" class="form-control" id="exampleInputAddress1" aria-describedby="emailHelp"
+              placeholder="Enter your Address">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Services</label>
+            <input type="text" formControlName="services" class="form-control" id="exampleInputServices1" aria-describedby="emailHelp"
+              placeholder="Enter the Services">
+          </div>
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Add details</button>
+      </div>
+    </div>
+  </div>
+</div>
